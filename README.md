@@ -4,6 +4,8 @@ A short course on **designing with and for AI agents**: memory, voice, environme
 
 MIT License.
 
+**Russian:** [ru/](ru/README.md)
+
 ## Contents
 
 1. [Ask the model](01-ask-the-model.md) — Why and how to ask the agent what it needs
