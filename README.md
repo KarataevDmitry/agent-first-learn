@@ -4,7 +4,7 @@ A short course on **designing with and for AI agents**: memory, voice, environme
 
 MIT License.
 
-**Russian:** [ru/](ru/README.md)
+**Russian:** [ru/](ru/README.md) · **Code of ethics:** [ETHICS_OF_PARTNERSHIP.md](ETHICS_OF_PARTNERSHIP.md)
 
 ## Contents
 
