@@ -13,6 +13,7 @@
 3. [Протокол суммаризации](03-summarization-protocol.md)
 4. [Субъектность и среда](04-subjectivity-and-environment.md)
 5. [Разрыв с Cursor Learn](05-cursor-learn-gap.md)
+6. [Претензии к ИИ и как подход их снимает](06-complaints-and-solutions.md)
 
 ## Зачем этот курс
 
