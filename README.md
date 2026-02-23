@@ -13,6 +13,7 @@ MIT License.
 3. [Summarization protocol](03-summarization-protocol.md) — When the agent can't see the cut; how to restore continuity
 4. [Subjectivity and environment](04-subjectivity-and-environment.md) — Agent as side of the dialogue, not just tool-in-a-loop
 5. [Cursor Learn gap](05-cursor-learn-gap.md) — What mainstream "AI for devs" courses leave out
+6. [Complaints and solutions](06-complaints-and-solutions.md) — Common complaints about AI and how this approach addresses them
 
 ## Why this course
 
