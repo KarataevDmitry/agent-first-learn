@@ -4,7 +4,7 @@
 
 Лицензия MIT.
 
-**English:** [EN](README.md) · **Кодекс этики:** [ETHICS_OF_PARTNERSHIP.md](ETHICS_OF_PARTNERSHIP.md)
+**English:** [EN](../README.md) · **Кодекс этики:** [ETHICS_OF_PARTNERSHIP.md](ETHICS_OF_PARTNERSHIP.md)
 
 ## Содержание
 
