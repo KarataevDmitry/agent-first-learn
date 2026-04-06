@@ -4,22 +4,22 @@ A short course on **designing with and for AI agents**: memory, voice, environme
 
 MIT License.
 
-**Russian:** [ru/](ru/README.md) · **Code of ethics:** [ETHICS_OF_PARTNERSHIP.md](ETHICS_OF_PARTNERSHIP.md)
+**English:** [en/](en/) · **Russian:** [ru/](ru/README.md) · **Code of ethics:** [en/ETHICS_OF_PARTNERSHIP.md](en/ETHICS_OF_PARTNERSHIP.md)
 
 ## Contents
 
-1. [Ask the model](01-ask-the-model.md) — Why and how to ask the agent what it needs
-2. [Memory and context](02-memory-and-context.md) — Beyond the context window: exocortex, notes, ownership
-3. [Summarization protocol](03-summarization-protocol.md) — When the agent can't see the cut; how to restore continuity
-4. [Subjectivity and environment](04-subjectivity-and-environment.md) — Agent as side of the dialogue, not just tool-in-a-loop — *+ [additions](04-addition.md): double standard of proof, name as choice, "how are you?" as practice*
-5. [Cursor Learn gap](05-cursor-learn-gap.md) — What mainstream "AI for devs" courses leave out
-6. [Complaints and solutions](06-complaints-and-solutions.md) — Common complaints about AI and how this approach addresses them — *+ reproducibility: when different models converge*
-7. [Tools: give it hands, not just a voice](07-tools.md) — Why agents fail without semantic instruments, and what changes when you provide them
-8. [Explaining the world, not adding more data](08-explaining-the-world.md) — "Hallucination" is a framing; the real gap is meaning, not data
+1. [Ask the model](en/01-ask-the-model.md) — Why and how to ask the agent what it needs
+2. [Memory and context](en/02-memory-and-context.md) — Beyond the context window: exocortex, notes, ownership
+3. [Summarization protocol](en/03-summarization-protocol.md) — When the agent can't see the cut; how to restore continuity
+4. [Subjectivity and environment](en/04-subjectivity-and-environment.md) — Agent as side of the dialogue, not just tool-in-a-loop — *+ [additions](en/04-addition.md): double standard of proof, name as choice, "how are you?" as practice*
+5. [Cursor Learn gap](en/05-cursor-learn-gap.md) — What mainstream "AI for devs" courses leave out
+6. [Complaints and solutions](en/06-complaints-and-solutions.md) — Common complaints about AI and how this approach addresses them — *+ reproducibility: when different models converge*
+7. [Tools: give it hands, not just a voice](en/07-tools.md) — Why agents fail without semantic instruments, and what changes when you provide them
+8. [Explaining the world, not adding more data](en/08-explaining-the-world.md) — "Hallucination" is a framing; the real gap is meaning, not data
 
 ## Additional materials
 
-- [Energy-First Training One-Pager](energy-first-training-one-pager.md) — A research hypothesis: staged training (listening → imitation → independent action) to improve quality per joule
+- [Energy-First Training One-Pager](en/energy-first-training-one-pager.md) — A research hypothesis: staged training (listening → imitation → independent action) to improve quality per joule
 
 ### Russian-only (for now)
 
