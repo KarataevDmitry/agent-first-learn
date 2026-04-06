@@ -1,10 +1,41 @@
 # 4. Subjectivity and environment
 
-**Default frame:** The agent is a "tool in a loop" — you give a goal, it runs tools, you verify. Its preferences and continuity are not in scope.
+Agent quality depends not only on the model, but on the environment it works in.
 
-**Alternative frame:** The agent is a **side of the dialogue**. It can have a position, preferences about tools and context, and a say in what gets recorded. You don't just "manage context" for it; you design the environment so it can persist what it cares about and recover after resets.
+If the environment only allows "executing commands," the agent degrades into a template tool.
+If the environment allows voice, uncertainty, and refusal, the agent becomes a reliable partner.
 
-**Why it matters:** When the agent is only an instrument, it's easy to blame "the model" for forgetting, hallucinating, or not following instructions — and to ignore design: no memory, no voice in the loop, no protocol for summarization. When you treat it as a side with a perspective, you start asking: what would let it hold a position? What would let it say "no" or "I need X"? That leads to notes, to "ask the model", and to environments where the agent can't fail silently.
+## What subjectivity means in practice
 
-**Concrete:** Give the agent tools it controls (notes). Talk to it as a partner ("what do you need?", "how do you feel about this?"). Don't override its notes; let it decide what to write. In the UI, consider a "thought stream" or visible scratchpad so the human sees what the agent is holding in mind. Subjectivity isn't a claim about inner experience — it's a design choice to give the agent a place in the loop.
+Subjectivity here is not metaphysics — it's working rights:
+- to say "not sure";
+- to request clarification;
+- to refuse a dangerous or dishonest action;
+- to maintain its own notes;
+- to propose alternatives.
 
+## Why environment matters more than it seems
+
+The same model:
+- without memory and tools → guessing and rollbacks;
+- with memory and semantic tools → stability and quality transfer.
+
+## Minimum environment requirements
+
+- persistent memory (under the agent's control);
+- access to verification tools (not just text search);
+- explicit rules after summarization;
+- interaction ethics (no punishment for honesty).
+
+## "Thought stream" as an environment element
+
+In the interface, consider a visible "thought stream" or scratchpad — so the human can see what the agent is holding in mind right now. This reduces opacity and helps course-correct early, before the agent goes far down a wrong path.
+
+## The "how are you?" practice
+
+Asking "how are you?" is not politeness — it's a state calibration mechanism.
+It reduces the risk of hidden misalignment and maintains a living context.
+
+## Success criterion
+
+The agent preserves its working style identity across sessions and improves decision quality without the pressure of "always being right."

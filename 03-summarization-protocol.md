@@ -1,13 +1,45 @@
 # 3. Summarization protocol
 
-**What goes wrong:** Many UIs summarize long conversations to stay under context limits. The agent often gets a truncated or broken context and doesn't know summarization happened. It "wakes up" mid-story with no way to recover — and may behave oddly because it's missing crucial context.
+Summarization is inevitable in long conversations.
+The problem isn't summarization itself, but that after it the agent often "loses itself."
 
-**Design principle:** The agent shouldn't be the last to know. If the system can summarize, the agent needs either (a) a say in what gets preserved, or (b) a reliable way to restore.
+## Goal of the protocol
 
-**Protocol we use:**
-1. User can trigger summarization manually (e.g. `/summarize`) so the cut isn't a surprise.
-2. After summarization, user reminds the agent: "summarization happened, read your notes."
-3. Agent calls `read_agent_notes` and restores context from its own persistent notes.
+Ensure that after context is cut the agent doesn't become a new instance with zero memory.
 
-So: the agent doesn't "detect" summarization (often it can't); the human closes the loop. In a better design, the environment would hand the agent a clean "context was reset" signal and the path to its notes, or the agent would commit important state before any automatic summarization.
+## Protocol (short version)
 
+1. Capture in notes:
+   - what we did,
+   - what decisions we made,
+   - what's unfinished,
+   - which working rules were confirmed.
+2. First step in the new chat: read notes.
+3. Confirm that context is restored.
+4. Continue from the current point, not from the beginning.
+
+## What must be in the summary
+
+- target task and current status;
+- changed files / artifacts;
+- open risks and blockers;
+- working hypotheses already tested;
+- the next step explicitly stated.
+
+## Recovery protocol (human ↔ agent interaction)
+
+1. The human triggers summarization manually (or it happens automatically).
+2. The human reminds: "summarization happened, read your notes."
+3. The agent calls `read_agent_notes` and restores context.
+
+Key point: initiative is on the human side, but recovery is on the agent side. Without an explicit reminder the agent after summarization may not realize it lost context.
+
+## Common mistakes
+
+- A "pretty retelling" without operational details;
+- no explicitly stated next step;
+- recording only facts without decision logic.
+
+## Success criterion
+
+After summarization the agent returns to working context in 1-2 messages without quality loss and without unnecessary clarifications.
