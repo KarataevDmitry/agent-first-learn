@@ -17,6 +17,15 @@ MIT License.
 7. [Tools: give it hands, not just a voice](07-tools.md) — Why agents fail without semantic instruments, and what changes when you provide them
 8. [Explaining the world, not adding more data](08-explaining-the-world.md) — "Hallucination" is a framing; the real gap is meaning, not data
 
+## Additional materials
+
+- [Energy-First Training One-Pager](energy-first-training-one-pager.md) — A research hypothesis: staged training (listening → imitation → independent action) to improve quality per joule
+
+### Russian-only (for now)
+
+- [Нетекстовый контур: от принципа к внедрению](ru/09-nontext-modal-mvp.md) — Non-text modality: principles, canonical episode schema, decision protocol, MVP stack
+- [Execution Gate v1](ru/EXECUTION_GATE.md) — Short operational protocol for stable action sequencing
+
 ## Why this course
 
 Most material teaches: better prompts, context management, delegating to agents. Almost none asks: *what does the model need?* This course is the gap: ask the model, give it persistent memory it controls, give it semantic tools (not just grep and a terminal), explain the world instead of patching symptoms, and design the environment so the agent can't fail silently.
